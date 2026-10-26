@@ -1,17 +1,18 @@
-```html
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StreetWear - Boutique</title>
+    <title>StreetWear</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
 
     <header>
         <h1>StreetWear</h1>
-        <p>La mode urbaine, votre style !</p>
+        <p>La mode urbaine</p>
     </header>
 
     <main>
@@ -23,40 +24,37 @@
             placeholder="Rechercher un produit..."
         >
 
-        <select id="categorie">
+        <select id="filtre">
             <option value="tous">Toutes les catégories</option>
             <option value="classic">Classic</option>
             <option value="graphic">Graphic</option>
         </select>
 
-        <section id="produits">
+        <p id="compteur">3 produits</p>
 
-            <article class="produit" data-categorie="classic">
+        <section id="produits">
+            <div class="produit" data-categorie="classic">
                 <h3>T-shirt Classic</h3>
                 <p>Prix : 120 DH</p>
-                <p>Un t-shirt simple et confortable.</p>
-            </article>
+            </div>
 
-            <article class="produit" data-categorie="graphic">
+            <div class="produit" data-categorie="graphic">
                 <h3>T-shirt Graphic</h3>
                 <p>Prix : 150 DH</p>
-                <p>Un t-shirt avec un design original.</p>
-            </article>
+            </div>
 
-            <article class="produit" data-categorie="classic">
+            <div class="produit" data-categorie="classic">
                 <h3>Sweat Classic</h3>
                 <p>Prix : 250 DH</p>
-                <p>Un sweat idéal pour tous les jours.</p>
-            </article>
-
+            </div>
         </section>
+
+        <p id="message"></p>
     </main>
 
     <footer>
-        <p>&copy; 2026 StreetWear - Tous droits réservés.</p>
+        <p>StreetWear - 2026</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
-```
