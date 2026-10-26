@@ -1,11 +1,62 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>StreetWear - Boutique</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>slm</h1>
+
+    <header>
+        <h1>StreetWear</h1>
+        <p>La mode urbaine, votre style !</p>
+    </header>
+
+    <main>
+        <h2>Nos produits</h2>
+
+        <input
+            type="text"
+            id="recherche"
+            placeholder="Rechercher un produit..."
+        >
+
+        <select id="categorie">
+            <option value="tous">Toutes les catégories</option>
+            <option value="classic">Classic</option>
+            <option value="graphic">Graphic</option>
+        </select>
+
+        <section id="produits">
+
+            <article class="produit" data-categorie="classic">
+                <h3>T-shirt Classic</h3>
+                <p>Prix : 120 DH</p>
+                <p>Un t-shirt simple et confortable.</p>
+            </article>
+
+            <article class="produit" data-categorie="graphic">
+                <h3>T-shirt Graphic</h3>
+                <p>Prix : 150 DH</p>
+                <p>Un t-shirt avec un design original.</p>
+            </article>
+
+            <article class="produit" data-categorie="classic">
+                <h3>Sweat Classic</h3>
+                <p>Prix : 250 DH</p>
+                <p>Un sweat idéal pour tous les jours.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StreetWear - Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+```
