@@ -17,3 +17,21 @@ filtre.addEventListener("change", function() {
     });
 });
 
+const recherche = document.getElementById("recherche");
+
+
+recherche.addEventListener("input", function() {
+    const texte = recherche.value.toLowerCase().trim();
+
+    produits.forEach(function(produit) {
+        const nom = produit.querySelector("h3").textContent.toLowerCase();
+
+        if (nom.includes(texte)) {
+            produit.style.display = "block";
+        } else {
+            produit.style.display = "none";
+        }
+    });
+});
+
+
