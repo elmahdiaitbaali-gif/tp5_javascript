@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.header h1 {
+    font-size: 32px;
+}
+
+.header p {
+    margin-top: 5px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.catalogue {
+    text-align: center;
+}
+
+.catalogue h2 {
+    margin-bottom: 10px;
+}
+
+
+.filtres {
+    margin: 20px 0;
+}
+
+.filtres input,
+.filtres select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.produits {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produit {
+    background-color: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.produit h3 {
+    margin-bottom: 10px;
+}
+
+.produit p {
+    font-weight: bold;
+    color: #555;
+}
+
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {
+    .filtres input,
+    .filtres select {
+        width: 90%;
+    }
+
+    .produit {
+        width: 100%;
+    }
+}
