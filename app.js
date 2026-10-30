@@ -17,3 +17,27 @@ produit.style.display = "none";
 });
 });
 
+
+
+const recherche = document.getElementById("recherche");
+const produits = document.querySelectorAll(".produit");
+
+
+function rechercherProduit() {
+
+    const texte = recherche.value.toLowerCase().trim();
+
+    produits.forEach(function(produit) {
+        const nom = produit.querySelector("h3").textContent.toLowerCase();
+
+    
+        if (nom.includes(texte)) {
+            produit.style.display = "";
+        } else {
+            produit.style.display = "none";
+        }
+
+    });
+}
+
+recherche.addEventListener("input", rechercherProduit);
