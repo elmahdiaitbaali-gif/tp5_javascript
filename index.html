@@ -1,255 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Morocco Sport Revolution</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StreetWear</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
 </head>
 <body>
-
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#accueil">MOROCCO SPORT <span class="text-warning">REVOLUTION</span></a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#acteurs">Acteurs</a></li>
-        <li class="nav-item"><a class="nav-link" href="#methode">Méthode</a></li>
-        <li class="nav-item"><a class="nav-link" href="#regions">Régions</a></li>
-        <li class="nav-item"><a class="nav-link" href="#innovations">Innovations</a></li>
-        <li class="nav-item"><a class="nav-link" href="#suivi">Suivi</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- ===== ACCUEIL ===== -->
-
-<header id="accueil" class="hero text-white text-center">
-  <div class="container hero-content">
-
-    <h1 class="display-3 fw-bold">Le sport, moteur de développement du Maroc</h1>
-    <p class="lead mx-auto" style="max-width:680px">Une plateforme nationale qui identifie les problèmes sportifs des communautés, propose des solutions et suit les progrès réalisés.</p>
-    <a href="#suivi" class="btn btn-danger btn-lg me-2">Signaler un besoin</a>
-    <a href="#apropos" class="btn btn-outline-light btn-lg">Découvrir le projet</a>
-  </div>
+<header>
+<h1>StreetWear</h1>
+<p>La mode urbaine</p>
 </header>
+<main>
+<h2>Nos produits</h2>
 
-<!-- ===== À PROPOS ===== -->
-<section id="apropos" class="container py-5">
-  <div class="row align-items-center g-5">
-    <div class="col-lg-6">
- ]
-      <img src="images/apropos.jpg" class="photo-big shadow" alt="Équipe Morocco Sport Revolution">
-    </div>
-    <div class="col-lg-6">
-      <p class="section-tag">À propos</p>
-      <h2 class="fw-bold">Qui sommes-nous ?</h2>
-      <p>Morocco Sport Revolution est une <strong>plateforme nationale à vocation sociale</strong>. Elle réunit jeunes talents, associations, clubs, bénévoles, collectivités et sponsors autour d’un même objectif : faire du sport un levier de développement pour chaque communauté marocaine.</p>
-      <h4 class="fw-bold mt-4">L’idée en bref</h4>
-      <p>Aujourd’hui, de nombreux besoins sportifs restent invisibles : un terrain abîmé, un club sans matériel, un talent sans accompagnement. Notre idée est simple : <strong>rendre ces besoins visibles, les relier aux bonnes solutions, puis montrer les résultats</strong>.</p>
-      <div class="row text-center g-2 mt-2">
-        <div class="col-4"><div class="pillar">Voir</div><small class="text-secondary">les besoins locaux</small></div>
-        <div class="col-4"><div class="pillar">Relier</div><small class="text-secondary">les acteurs</small></div>
-        <div class="col-4"><div class="pillar">Mesurer</div><small class="text-secondary">les progrès</small></div>
-      </div>
-    </div>
-  </div>
+<select id="filtre">
+<option value="tous">Toutes les catégories</option>
+<option value="classic">Classic</option>
+<option value="graphic">Graphic</option>
+</select>
+
+<section id="produits">
+<div class="produit" data-categorie="classic">
+<h3>T-shirt Classic</h3>
+<p>Prix : 120 DH</p>
+</div>
+<div class="produit" data-categorie="graphic">
+<h3>T-shirt Graphic</h3>
+<p>Prix : 150 DH</p>
+</div>
+<div class="produit" data-categorie="classic">
+<h3>Sweat Classic</h3>
+<p>Prix : 250 DH</p>
+</div>
 </section>
-
-<!-- ===== ACTEURS ===== -->
-<section id="acteurs" class="bg-light py-5">
-  <div class="container">
-    <p class="section-tag text-center">Une plateforme qui relie</p>
-    <h2 class="text-center fw-bold mb-4">Les acteurs du changement</h2>
-    <div class="row g-4">
-      <div class="col-12 col-md-6 col-lg-4"><div class="card h-100 shadow-sm">
-
-        <img src="images/TAL.JPG" class="card-img-top photo" alt="Jeunes talents">
-        <div class="card-body"><h5>Jeunes talents</h5><p class="text-secondary mb-0">Être repérés, accompagnés et soutenus dans leur parcours.</p></div></div></div>
-      <div class="col-12 col-md-6 col-lg-4"><div class="card h-100 shadow-sm">
-
-        <img src="images/associations.jpg" class="card-img-top photo" alt="Associations">
-        <div class="card-body"><h5>Associations</h5><p class="text-secondary mb-0">Mutualiser les moyens et valoriser leurs actions de terrain.</p></div></div></div>
-      <div class="col-12 col-md-6 col-lg-4"><div class="card h-100 shadow-sm">
-
-        <img src="images/clubs.jpg" class="card-img-top photo" alt="Clubs sportifs">
-        <div class="card-body"><h5>Clubs sportifs</h5><p class="text-secondary mb-0">Trouver des talents, du matériel et des financements.</p></div></div></div>
-      <div class="col-12 col-md-6 col-lg-4"><div class="card h-100 shadow-sm">
-
-        <img src="images/benevoles.jpg" class="card-img-top photo" alt="Bénévoles">
-        <div class="card-body"><h5>Bénévoles</h5><p class="text-secondary mb-0">Offrir son temps et ses compétences là où le besoin existe.</p></div></div></div>
-      <div class="col-12 col-md-6 col-lg-4"><div class="card h-100 shadow-sm">
-
-        <img src="images/collectivites.jpg" class="card-img-top photo" alt="Collectivités">
-        <div class="card-body"><h5>Collectivités</h5><p class="text-secondary mb-0">Piloter les besoins locaux et planifier les infrastructures.</p></div></div></div>
-      <div class="col-12 col-md-6 col-lg-4"><div class="card h-100 shadow-sm">
-
-        <img src="images/sponsors.jpg" class="card-img-top photo" alt="Partenaires et sponsors">
-        <div class="card-body"><h5>Partenaires et sponsors</h5><p class="text-secondary mb-0">Investir dans des projets utiles et mesurer leur impact.</p></div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== MÉTHODE ===== -->
-<section id="methode" class="container py-5">
-  <p class="section-tag text-center">Notre méthode</p>
-  <h2 class="text-center fw-bold mb-4">Identifier, proposer, suivre</h2>
-  <div class="row g-4">
-    <div class="col-md-4"><div class="card h-100 border-0 shadow-sm">
-
-      <div class="card-body"><span class="step-n">1</span><h5 class="d-inline ms-2">Identifier</h5><p class="text-secondary mt-2 mb-0">Recenser les problèmes sportifs de chaque communauté : terrains, matériel, encadrement, accès.</p></div></div></div>
-    <div class="col-md-4"><div class="card h-100 border-0 shadow-sm">
-
-      <div class="card-body"><span class="step-n">2</span><h5 class="d-inline ms-2">Proposer</h5><p class="text-secondary mt-2 mb-0">Mobiliser les bonnes solutions et les bons acteurs autour de chaque besoin.</p></div></div></div>
-    <div class="col-md-4"><div class="card h-100 border-0 shadow-sm">
-
-      <div class="card-body"><span class="step-n">3</span><h5 class="d-inline ms-2">Suivre</h5><p class="text-secondary mt-2 mb-0">Mesurer l’avancement et rendre les progrès visibles pour tous.</p></div></div></div>
-  </div>
-</section>
-
-<!-- ===== STATISTIQUES DES RÉGIONS CIBLES ===== -->
-<section id="regions" class="bg-dark text-white py-5">
-  <div class="container">
-    <p class="section-tag text-center text-warning">Régions ciblées</p>
-    <h2 class="text-center fw-bold mb-2">Les chiffres par région</h2>
-
-    <div class="row g-3 text-center mb-4">
-      <div class="col-6 col-md-3"><div class="stat-box"><strong id="tBesoins">0</strong><span>Besoins identifiés</span></div></div>
-      <div class="col-6 col-md-3"><div class="stat-box"><strong id="tResolus">0</strong><span>Besoins résolus</span></div></div>
-      <div class="col-6 col-md-3"><div class="stat-box"><strong id="tJeunes">0</strong><span>Jeunes touchés</span></div></div>
-      <div class="col-6 col-md-3"><div class="stat-box"><strong id="tClubs">0</strong><span>Clubs partenaires</span></div></div>
-    </div>
-
-    <div class="btn-group mb-3 d-flex flex-wrap" id="metricBtns">
-      <button class="btn btn-warning" data-m="besoins">Besoins</button>
-      <button class="btn btn-outline-warning" data-m="taux">Taux de résolution</button>
-      <button class="btn btn-outline-warning" data-m="jeunes">Jeunes touchés</button>
-      <button class="btn btn-outline-warning" data-m="clubs">Clubs</button>
-    </div>
-    <div id="regionBars"></div>
-  </div>
-</section>
-
-<!-- ===== INNOVATIONS ===== -->
-<section id="innovations" class="container py-5">
-  <p class="section-tag text-center">Ce qui nous distingue</p>
-  <h2 class="text-center fw-bold mb-4">Nos innovations</h2>
-  <div class="row g-4 mb-5">
-    <div class="col-md-6 col-lg-3"><div class="card h-100 shadow-sm">
-
-      <div class="card-body"><h6 class="fw-bold">Carte des besoins</h6><p class="small text-secondary mb-0">Chaque problème sportif localisé et visible par tous.</p></div></div></div>
-    <div class="col-md-6 col-lg-3"><div class="card h-100 shadow-sm">
-
-      <div class="card-body"><h6 class="fw-bold">Passeport sportif</h6><p class="small text-secondary mb-0">Un profil numérique pour chaque jeune talent.</p></div></div></div>
-    <div class="col-md-6 col-lg-3"><div class="card h-100 shadow-sm">
-
-      <div class="card-body"><h6 class="fw-bold">Bourse des bénévoles</h6><p class="small text-secondary mb-0">Les compétences rencontrent les missions utiles.</p></div></div></div>
-    <div class="col-md-6 col-lg-3"><div class="card h-100 shadow-sm">
-
-      <div class="card-body"><h6 class="fw-bold">Tableau de bord sponsors</h6><p class="small text-secondary mb-0">Suivre l’impact réel de chaque contribution.</p></div></div></div>
-  </div>
-
-  <div class="match-box text-center p-4 p-md-5 rounded-4">
-    <h3 class="fw-bold">Trouvez votre match</h3>
-    <p>Qui êtes-vous ? Découvrez avec qui vous pouvez agir.</p>
-    <div class="d-flex flex-wrap justify-content-center gap-2 mb-3" id="matchBtns"></div>
-    <p class="fs-5 fw-semibold mb-0" id="matchText">Choisissez votre profil ci-dessus.</p>
-  </div>
-</section>
-
-<!-- ===== SUIVI MODERNE (tableau Kanban) ===== -->
-<section id="suivi" class="bg-light py-5">
-  <div class="container">
-    <p class="section-tag text-center">Suivi des projets</p>
-    <h2 class="text-center fw-bold mb-4">Du besoin à la solution</h2>
-
-    <form id="formBesoin" class="row g-2 mb-4">
-      <div class="col-md-4"><input id="titre" class="form-control" placeholder="Besoin (ex : terrain dégradé)" required></div>
-      <div class="col-md-3"><select id="regionSel" class="form-select"></select></div>
-      <div class="col-md-3"><select id="typeSel" class="form-select"><option>Infrastructure</option><option>Matériel</option><option>Encadrement</option><option>Financement</option></select></div>
-      <div class="col-md-2 d-grid"><button class="btn btn-success">Ajouter</button></div>
-    </form>
-
-    <div class="d-flex justify-content-between small text-secondary"><span>Progression globale</span><span id="globalTxt"></span></div>
-    <div class="progress mb-4" style="height:14px"><div id="globalBar" class="progress-bar bg-success" style="width:0%"></div></div>
-
-    <div class="row g-3" id="kanban">
-      <div class="col-md-4"><div class="kcol"><h6 class="kcol-title bg-danger">Identifié</h6><div id="col0"></div></div></div>
-      <div class="col-md-4"><div class="kcol"><h6 class="kcol-title bg-warning text-dark">En cours</h6><div id="col1"></div></div></div>
-      <div class="col-md-4"><div class="kcol"><h6 class="kcol-title bg-success">Résolu</h6><div id="col2"></div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="container py-5">
-  <div class="row g-5 align-items-center">
-    <div class="col-lg-6">
-
-      <img src="images/contact.jpg" class="photo-big shadow" alt="Rejoignez-nous">
-    </div>
-    <div class="col-lg-6">
-      <p class="section-tag">Contact</p>
-      <h2 class="fw-bold mb-3">Rejoignez la révolution</h2>
-      <form id="formContact">
-        <div class="mb-3"><label class="form-label">Nom / Organisation</label><input class="form-control" required></div>
-        <div class="mb-3"><label class="form-label">Email</label><input type="email" class="form-control" required></div>
-        <div class="mb-3"><label class="form-label">Vous êtes</label>
-          <select class="form-select"><option>Jeune talent</option><option>Association</option><option>Club</option><option>Bénévole</option><option>Collectivité</option><option>Sponsor</option></select></div>
-        <button class="btn btn-danger w-100">Envoyer</button>
-      </form>
-      <div id="alerte" class="alert alert-success mt-3 d-none">Merci ! Votre demande est enregistrée (démo).</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="footer text-white pt-5">
-  <div class="container">
-    <div class="row g-4 pb-4">
-      <div class="col-lg-4">
-        <h5 class="fw-bold">MOROCCO SPORT <span class="text-warning">REVOLUTION</span></h5>
-        <p class="text-white-50">Le sport comme moteur de développement du Maroc. Une plateforme qui relie les acteurs, résout les besoins et suit les progrès.</p>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h6 class="text-warning">Navigation</h6>
-        <ul class="list-unstyled footer-links">
-          <li><a href="#apropos">À propos</a></li><li><a href="#acteurs">Acteurs</a></li><li><a href="#methode">Méthode</a></li><li><a href="#regions">Régions</a></li><li><a href="#suivi">Suivi</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h6 class="text-warning">Rejoindre</h6>
-        <ul class="list-unstyled footer-links">
-          <li><a href="#contact">Jeune talent</a></li><li><a href="#contact">Association</a></li><li><a href="#contact">Club</a></li><li><a href="#contact">Bénévole</a></li><li><a href="#contact">Sponsor</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-4">
-        <h6 class="text-warning">Contacts</h6>
-        <ul class="list-unstyled footer-links">
-          <li>Email : <a href="mailto:contact@moroccosportrevolution.ma">contact@moroccosportrevolution.ma</a></li>
-          <li>Téléphone : <a href="tel:+212600000000">+212 6 00 00 00 00</a></li>
-          <li>Adresse : à compléter, Maroc</li>
-        </ul>
-        <div class="d-flex gap-3 footer-links">
-
-          <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">YouTube</a>
-        </div>
-      </div>
-    </div>
-    <div class="border-top border-secondary py-3 d-flex flex-wrap justify-content-between small text-white-50">
-      <span>© 2026 Morocco Sport Revolution. Tous droits réservés.</span>
-
-    </div>
-  </div>
+</main>
+<footer>
+<p>StreetWear - 2026</p>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
+
