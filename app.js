@@ -20,7 +20,7 @@ produit.style.display = "none";
 
 
 const recherche = document.getElementById("recherche");
-const produits = document.querySelectorAll(".produit");
+
 
 
 function rechercherProduit() {
